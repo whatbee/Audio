@@ -1,4 +1,6 @@
-from __future__ import division # comment this out if using python 3 or greater
+import sys
+if sys.version_info[0] < 3:
+    from __future__ import division # why did python 3 change the way division works???
 import math
 maxbits = (2**12) # bit depth of DAC
 tablesize = 128   # number of notes in table
